@@ -449,7 +449,7 @@
         "properties": {
           "redhat.telemetry.enabled": {
             "type": "boolean",
-            "default": null,
+            "default": false,
             "markdownDescription": "Enable usage data and errors to be sent to Red Hat servers. Read our [privacy statement](https://developers.redhat.com/article/tool-data-collection).",
             "order": 0,
             "tags": [
@@ -522,29 +522,7 @@
         "editor.autoIndent": "advanced"
       }
     },
-    "keybindings": [
-      {
-        "key": "tab",
-        "command": "ansible.lightspeed.inlineSuggest.accept",
-        "extensionName": "Ansible",
-        "source": "extension",
-        "when": "inlineSuggestionVisible && editorLangId == 'ansible'"
-      },
-      {
-        "key": "escape",
-        "command": "ansible.lightspeed.inlineSuggest.hide",
-        "extensionName": "Ansible",
-        "source": "extension",
-        "when": "inlineSuggestionVisible && editorLangId == 'ansible'"
-      },
-      {
-        "key": "ctrl+.",
-        "command": "ansible.lightspeed.inlineSuggest.trigger",
-        "extensionName": "Ansible",
-        "source": "extension",
-        "when": "config.ansible.lightspeed.enabled && config.ansible.lightspeed.suggestions.enabled && editorTextFocus && !editorHasSelection && !inlineSuggestionVisible && editorLangId == 'ansible'"
-      }
-    ],
+    "keybindings": [],
     "languages": [
       {
         "id": "ansible",
